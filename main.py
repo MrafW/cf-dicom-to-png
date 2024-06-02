@@ -62,7 +62,7 @@ def export_dicom_instance(event, context):
     print(f"Exported DICOM instance to GCS: {exported_dicom_uri}")
     print(f"Converted to PNG and saved to GCS: gs://{bucket_name}/{png_filename}")
 
-# Example usage (replace with your actual Pub/Sub message)
+# Pub/Sub Message
 event = {
     'data': json.dumps({
         'dicom_instance_uri': 'projects/your-project-id/locations/your-region/datasets/your-dataset-id/dicomStores/your-dicom-store-id/instances/your-dicom-instance-id'
